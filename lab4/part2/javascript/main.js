@@ -1,3 +1,4 @@
+alert("JS CONNECTED");
 console.log("JS is running");
 const displayedImage = document.querySelector(".displayed-img");
 const thumbBar = document.querySelector(".thumb-bar");
