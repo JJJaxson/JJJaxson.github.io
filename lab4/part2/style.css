@@ -17,12 +17,15 @@ h1 {
   margin-bottom: 2px;
 }
 
+/* FIX: overlay must cover image AND allow darkening effect */
 .overlay {
   position: absolute;
   top: 0;
   left: 0;
-  width: 640px;
-  height: 480px;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0);
+  pointer-events: none;
 }
 
 button {
@@ -32,24 +35,25 @@ button {
   cursor: pointer;
   top: 2px;
   left: 2px;
+  z-index: 10;
 }
 
 button:hover,
 button:focus {
-  color: rgb(150 150 150 / 1);
+  color: rgb(255 255 255 / 1);
   background-color: black;
 }
 
 .thumb-bar {
   display: flex;
   gap: 2px;
-  cursor: pointer;
+  margin-top: 5px;
 }
 
 .thumb-bar img {
   display: block;
   width: 100px;
-  flex: 1;
+  cursor: pointer;
 }
 
 .thumb-bar img:hover,
