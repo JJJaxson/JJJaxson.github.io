@@ -46,14 +46,16 @@ button:focus {
 
 .thumb-bar {
   display: flex;
-  gap: 2px;
+  gap: 5px;
   margin-top: 5px;
 }
 
 .thumb-bar img {
-  display: block;
   width: 100px;
+  height: 70px;
+  object-fit: cover;
   cursor: pointer;
+  flex: 0 0 auto;
 }
 
 .thumb-bar img:hover,
