@@ -1,3 +1,4 @@
+console.log("JS is running");
 const displayedImage = document.querySelector(".displayed-img");
 const thumbBar = document.querySelector(".thumb-bar");
 
@@ -12,7 +13,7 @@ const images = [
     {filename: "pic5.jpg", alt: "Large moth on a leaf" },
 ];
 
-const baseURL = "https://mdn.github.io/shared-assets/images/examples/learn/gallery/";
+const baseURL = "images/";
 
 for (const image of images) {
     const newImage = document.createElement("img");
@@ -32,3 +33,15 @@ function updateDisplayedImage(e) {
     displayedImage.src = e.target.src;
     displayedImage.alt = e.target.alt;
 }
+
+btn.addEventListener("click", () => {
+    btn.classList.toggle("dark");
+    if (btn.classList.contains("dark")) {
+        btn.textContent = "Lighten";
+        overlay.style.backgroundColor = "rgb(0 0 0 / 0.5)";
+    }
+    else {
+        btn.textContent = "Darken";
+        overlay.style.backgroundColor = "rgb(0 0 0 / 0)";
+    }
+});
