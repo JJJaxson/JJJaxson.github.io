@@ -31,6 +31,10 @@ h2 {
   font-size: 3rem;
 }
 
+.secondary h2 {
+  text-align: center;
+}
+
 h3 {
   font-family: 'Sonsie One', cursive;
   font-size: 2.2rem;
@@ -134,14 +138,19 @@ p, li, table {
 
 main {
   display: flex;
+  gap: 10px;
 }
 
 article {
-  flex: 5;
+  flex: 3;
+  background: #eee;
+  padding: 20px;
 }
 
 .secondary {
-  flex: 2;
+  flex: 1;
+  background: #eee;
+  padding: 20px;
 }
 
 footer {
@@ -176,8 +185,9 @@ tbody tr:nth-child(odd) {
 
 img, audio {
   display: block;
-  margin: 0 auto;
+  margin: 20px auto;
 }
+
 
 audio {
   width: 500px;
