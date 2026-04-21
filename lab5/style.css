@@ -28,6 +28,7 @@ h1 {
 
 h2 {
   font-family: 'Sonsie One', cursive;
+  text-align: center;
   font-size: 3rem;
 }
 
@@ -70,12 +71,12 @@ p, li, table {
 /* || header layout */
 
 .header {
-  background-color: #ccc;
+  background-color: #d2d2d200;
   padding: 20px;
 }
 
 .nav {
-  background-color: #ddd;
+  background-color: #ffffff;
   display: flex;
   align-items: center;
   padding: 10px;
@@ -143,13 +144,13 @@ main {
 
 article {
   flex: 3;
-  background: #eee;
+  background: #ffffff;
   padding: 20px;
 }
 
 .secondary {
   flex: 1;
-  background: #eee;
+  background: #ffffff;
   padding: 20px;
 }
 
