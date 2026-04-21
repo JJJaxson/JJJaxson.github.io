@@ -65,53 +65,52 @@ p, li, table {
 
 /* || header layout */
 
-div[class="nav"], article, footer, .secondary {
-  background-color: green;
+.header {
+  background-color: #ccc;
+  padding: 20px;
 }
 
-article, footer, .secondary {
-  padding: 10px 30px;
-}
-
-article {
-  margin-right: 10px;
-}
-
-div[class="nav"] {
-  height: 50px;
-  background-color: #d3d3d3;
+.nav {
+  background-color: #ddd;
   display: flex;
-  padding: 1% 0;
+  align-items: center;
+  padding: 10px;
   margin-bottom: 10px;
 }
 
-div[class="nav"] ul {
-  padding: 0;
-  list-style-type: none;
-  flex: 2;
+.nav ul {
+  list-style: none;
   display: flex;
+  flex: 3;
+  margin: 0;
+  padding: 0;
 }
 
-div[class="nav"] li {
-  display: inline;
-  text-align: center;
+.nav li {
   flex: 1;
+  text-align: center;
 }
 
-div[class="nav"] a {
-  display: inline-block;
-  font-size: 2rem;
-  text-transform: uppercase;
+.nav a {
   text-decoration: none;
+  font-size: 1.8rem;
   color: black;
 }
 
-div[class="nav"] .search {
+.search {
   flex: 1;
   display: flex;
-  align-items: center;
-  height: 100%;
-  padding: 0 2em;
+}
+
+.search input[type="search"] {
+  flex: 3;
+}
+
+.search input[type="submit"] {
+  flex: 1;
+  background: black;
+  color: white;
+  border: none;
 }
 
 .search input {
